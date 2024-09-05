@@ -1,0 +1,7 @@
+FROM tomcat:8.0-alpine
+LABEL maintainer="rann2004@gmail.com"
+
+ADD awanp.war /usr/local/tomcat/webapps/
+
+EXPOSE 1089
+CMD ["catalina.sh", "run"]
